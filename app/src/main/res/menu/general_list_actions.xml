@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- Refresh, should appear as action button -->
+    <item android:id="@+id/action_refresh_list"
+        android:icon="@drawable/ic_refresh"
+        android:title="@string/refresh"
+        android:showAsAction="ifRoom"
+        app:showAsAction="ifRoom" />
+
+</menu>

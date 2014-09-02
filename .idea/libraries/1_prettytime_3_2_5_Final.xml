@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="1_prettytime-3.2.5.Final">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/prettytime-3.2.5.Final.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

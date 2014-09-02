@@ -1,0 +1,42 @@
+<!-- Shows an indication of a network error -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/networkErrorView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top|center_horizontal"
+    android:layout_marginTop="50dp"
+    android:orientation="vertical"
+    android:visibility="visible"
+    android:background="#77000000"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/errorIcon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription=""
+
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/error_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="@string/error_title_network"
+        android:textColor="@color/list_background"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/tap_to_retry"
+        style="@style/ActionButton.Retry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/tap_to_retry" />
+
+</LinearLayout>

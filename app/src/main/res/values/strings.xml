@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SampleApplication</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Sign up and Login -->
+    <string name="sign_up_text">Sign up</string>
+    <string name="login_button_label">Login</string>
+    <string name="login_error_message">Error</string>
+    <string name="login_error_title">Error</string>
+    <string name="main_activity">Main</string>
+    <string name="no_internet_connection">There\'s no internet connection</string>
+    <string name="no_server_error">We cannot find our server.</string>
+    <string name="generic_error">There\' an error</string>
+    <string name="error_title_network">Sorry, but it seems you don\'t have internet connection</string>
+    <string name="tap_to_retry">Try again</string>
+    <string name="refresh">Refresh</string>
+
+
+</resources>
