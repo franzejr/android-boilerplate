@@ -9,4 +9,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
+    <TextView
+        android:id="@+id/emptyList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/list_background"
+        android:visibility="gone"
+        android:gravity="center" />
+
 </LinearLayout>

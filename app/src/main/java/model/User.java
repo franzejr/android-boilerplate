@@ -21,9 +21,6 @@ public class User extends Base implements Parcelable {
         }
     };
     protected static final String NAME_KEY = "name";
-    protected static final String AVATAR_KEY = "avatar";
-    protected static final String COVER_KEY = "cover";
-    protected static final String TEAM_KEY = "team";
     protected static final String SHORT_NAME_KEY = "short_name";
     protected static final String EMAIL_KEY = "email";
     protected static final String AUTHENTICATION_TOKEN_KEY = "authentication_token";
