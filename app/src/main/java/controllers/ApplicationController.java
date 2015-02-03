@@ -1,6 +1,5 @@
 package controllers;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.support.v4.app.Fragment;
@@ -21,11 +20,9 @@ import util.SampleApplicationAPI;
 
 public class ApplicationController {
 
-    protected int mPosition = -1;
     protected Context mContext;
     protected SharedPreferences mPreferences;
     protected Fragment mFragment;
-    protected Activity mActivity;
     protected int mCurrentPage = -1;
 
     public ApplicationController(Context context) {
@@ -34,7 +31,7 @@ public class ApplicationController {
     }
 
     protected String getAuthenticatedUrl(String baseUrl) {
-        String url = baseUrl + "?fan_token=" + MyApplication.currentUser(mContext).getAuthentication_token() + "&fan_email=" + MyApplication.currentUser(mContext).getEmail();
+        String url = baseUrl + "?fan_token=" + MyApplication.currentUser(mContext).getAuthentication_token() + "&user_email=" + MyApplication.currentUser(mContext).getEmail();
         return url;
     }
 

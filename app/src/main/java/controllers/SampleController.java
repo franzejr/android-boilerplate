@@ -26,7 +26,7 @@ import util.SampleApplicationAPI;
 
 public class SampleController extends ApplicationController {
 
-    protected static final String LIKES_URL = "/sample";
+    protected static final String SAMPLE_URL = "/sample";
 
 
     private Adapter mAdapter;
@@ -61,19 +61,19 @@ public class SampleController extends ApplicationController {
 
 
     private String getDestroySampleUrl(int resourceID) {
-        String url_param = "/" + resourceID + LIKES_URL;
+        String url_param = "/" + resourceID + SAMPLE_URL;
         String url = getAuthenticatedUrl(url_param);
         return url;
     }
 
     private String getCreateSampleUrl(Sample sample) {
-        String url_param = "/" + sample.getId() + LIKES_URL;
+        String url_param = "/" + sample.getId() + SAMPLE_URL;
         String url = getAuthenticatedUrl(url_param);
         return url;
     }
 
     private String getListSampleUrl(int page) {
-        return getAuthenticatedUrl("/"  + LIKES_URL, page);
+        return getAuthenticatedUrl("/"  + SAMPLE_URL, page);
     }
 
     /*

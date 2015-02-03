@@ -33,7 +33,6 @@
 
     <Button
         android:id="@+id/tap_to_retry"
-        style="@style/ActionButton.Retry"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
