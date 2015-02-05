@@ -5,6 +5,9 @@ import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.widget.Adapter;
 
+import com.android.volley.RequestQueue;
+import com.android.volley.toolbox.JsonRequest;
+import com.android.volley.toolbox.Volley;
 import com.loopj.android.http.JsonHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
 
@@ -84,6 +87,7 @@ public class SampleController extends ApplicationController {
      */
 
     private void get(String url) {
+
         SampleApplicationAPI.get(url, null, new CustomJSONHttpResponseHandler() {
             @Override
             public void onSuccess(int statusCode, Header[] headers, JSONObject json) {

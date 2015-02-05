@@ -36,4 +36,5 @@ dependencies {
     compile 'com.facebook:facebook-android-sdk:+@aar'
     compile 'org.ocpsoft.prettytime:prettytime:3.2.5.Final'
     compile 'com.loopj.android:android-async-http:1.4.5'
+    compile files('libs/volley.jar')
 }
