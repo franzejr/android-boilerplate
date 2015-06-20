@@ -5,9 +5,6 @@ import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.widget.Adapter;
 
-import com.android.volley.RequestQueue;
-import com.android.volley.toolbox.JsonRequest;
-import com.android.volley.toolbox.Volley;
 import com.loopj.android.http.JsonHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
 
@@ -22,7 +19,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 
-import fragments.SampleFragment;
+import ui.fragments.SampleFragment;
 import model.Sample;
 import util.SampleApplicationAPI;
 

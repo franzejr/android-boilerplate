@@ -5,8 +5,6 @@ import android.content.SharedPreferences;
 import android.support.v4.app.Fragment;
 import android.view.View;
 
-import com.android.volley.RequestQueue;
-import com.android.volley.toolbox.Volley;
 import com.example.franzejr.sampleapplication.MyApplication;
 import com.example.franzejr.sampleapplication.R;
 import com.loopj.android.http.JsonHttpResponseHandler;
@@ -15,7 +13,7 @@ import org.apache.http.Header;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import fragments.BaseFragmentInterface;
+import ui.fragments.BaseFragmentInterface;
 import util.ConnectionManager;
 import util.SampleApplicationAPI;
 

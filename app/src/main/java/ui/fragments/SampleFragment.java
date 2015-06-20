@@ -1,4 +1,4 @@
-package fragments;
+package ui.fragments;
 
 import android.content.Context;
 import android.os.Bundle;

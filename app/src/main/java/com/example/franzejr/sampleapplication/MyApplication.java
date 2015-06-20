@@ -14,11 +14,10 @@ import com.android.volley.toolbox.Volley;
 import com.parse.Parse;
 import com.parse.ParseInstallation;
 
-import controllers.ApplicationController;
 import model.CurrentUser;
 import model.User;
-import ui.LoginActivity;
-import ui.MainActivity;
+import ui.activities.LoginActivity;
+import ui.activities.MainActivity;
 
 public class MyApplication extends Application {
 

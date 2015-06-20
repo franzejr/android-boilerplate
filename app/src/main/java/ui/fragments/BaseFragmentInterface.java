@@ -1,4 +1,4 @@
-package fragments;
+package ui.fragments;
 
 public interface BaseFragmentInterface {
 

@@ -1,7 +1,8 @@
-package fragments;
+package ui.fragments;
+
 
 import android.content.Context;
-import android.support.v4.app.ListFragment;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -9,20 +10,15 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.TextView;
 
 import com.example.franzejr.sampleapplication.R;
 
 
-public class BaseListFragment extends ListFragment implements BaseFragmentInterface {
-
+public class BaseFragment extends Fragment implements BaseFragmentInterface {
     protected View rootView;
     protected View emptyView;
     protected View errorView;
-    protected int mCurrentPage = 1;
-    protected com.nhaarman.listviewanimations.ArrayAdapter mAdapter;
-    protected ListView mLvItems;
 
 
     @Override
@@ -37,11 +33,9 @@ public class BaseListFragment extends ListFragment implements BaseFragmentInterf
 
     @Override
     public void refresh() {
-        ((ViewGroup) rootView).removeView(errorView);
-        if (mLvItems != null)
-            mLvItems.setVisibility(View.VISIBLE);
-        if (emptyView != null)
-            emptyView.setVisibility(View.GONE);
+        if (rootView != null){
+            ((ViewGroup) rootView).removeView(errorView);
+        }
         errorView = null;
     }
 
@@ -52,7 +46,7 @@ public class BaseListFragment extends ListFragment implements BaseFragmentInterf
 
     @Override
     public void onEmptyList() {
-        emptyView = rootView.findViewById(R.id.emptyList);
+
     }
 
     @Override
@@ -71,8 +65,6 @@ public class BaseListFragment extends ListFragment implements BaseFragmentInterf
             TextView title = (TextView) errorView.findViewById(R.id.error_title);
             ImageView icon = (ImageView) errorView.findViewById(R.id.errorIcon);
             title.setText(titleMessage);
-            if (mLvItems != null)
-                mLvItems.setVisibility(View.GONE);
             //TODO: Add the icon
 
             errorView.setVisibility(View.VISIBLE);
@@ -89,12 +81,7 @@ public class BaseListFragment extends ListFragment implements BaseFragmentInterf
     }
 
     private void addErrorView(int titleMessageResourceID, int imageResourceID) {
-        try {
-            addErrorView(getActivity().getString(titleMessageResourceID), imageResourceID);
-        } catch (NullPointerException e) {
-
-        }
-
+        addErrorView(getActivity().getString(titleMessageResourceID), imageResourceID);
     }
 
     @Override
