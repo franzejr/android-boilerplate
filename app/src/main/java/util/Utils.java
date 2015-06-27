@@ -18,5 +18,5 @@ public class Utils {
     public  static  void  finish ( Activity activity ) {
         activity.finish();
     }
-    
+
 }
